@@ -1,0 +1,28 @@
+.form-control {
+  padding: 16px;
+}
+.form-box {
+  padding: 20px 5%;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: .2rem;
+  margin: 1rem -15px 0;
+  border: solid #f7f7f9;
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+}
+#first_name iframe, 
+#last_name iframe, 
+#cc_number iframe {
+  width: 100% !important;
+} 
+#cc_month iframe {
+  width: 30% !important;
+}
+#cc_year iframe {
+  width: 30% !important;
+}
+#cc_cvv iframe {
+  width: 30% !important;
+}

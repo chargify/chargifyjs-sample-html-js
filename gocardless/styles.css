@@ -1,0 +1,30 @@
+.form-control {
+  padding: 16px;
+}
+.form-box {
+  padding: 20px 5%;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: .2rem;
+  margin: 1rem -15px 0;
+  border: solid #f7f7f9;
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+}
+#first_name iframe, 
+#last_name iframe, 
+#bank_name iframe, 
+#bank_iban iframe, 
+#branch_code iframe, 
+#routing_number iframe, 
+#account_number iframe, 
+#account_holder_type iframe, 
+#billing_address iframe,
+#billing_address2 iframe,
+#billing_city iframe,
+#billing_zip iframe,
+#billing_country iframe, 
+#billing_state iframe {
+  width: 100% !important;
+}

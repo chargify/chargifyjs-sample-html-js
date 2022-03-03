@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- include chargifyjs -->
+    <script src="https://js.chargify.com/latest/chargify.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Chargifyjs custom CSS (modify as needed) -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- begin body -->
+  <body>
+    <div class="form-box">
+      <h2 align="left">Chargifyjs for Credit Cards</h2>
+      <hr style="margin-top:16px; margin-bottom:32px; border-bottom: 4px solid #e0e1ec;">
+
+      <!-- load spinner -->
+      <div id="load_spinner" class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+   
+      <!-- error banner -->
+      <div class="alert alert-danger" role="alert" id="chargify-error-message" style="display:none;"></div>
+
+      <form id="chargify-form" action="create.js" method="POST" style="display:none;">
+        
+      	<!-- Card Details Section -->
+      	<h5 style="margin-bottom:32px;">Card Details</h5>
+
+        <!-- Chargifyjs Form Fields -->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div id="first_name"></div>
+          </div>
+          <div class="form-group col-md-6">
+            <div id="last_name"></div>
+          </div>
+          <div class="form-group col-md-6">
+            <div id="cc_number"></div>
+          </div>
+          <div class="form-group col-md-6">
+            <span id="cc_month"></span>
+            <span id="cc_year"></span>
+            <span id="cc_cvv"></span>
+          </div>
+        </div>
+        
+        <!-- Form Submit -->
+        <button type="submit" class="btn btn-primary">Save Card</button>
+
+        <!-- Display Chargifyjs Token (make this input hidden in production) -->
+        <hr>The Chargify Token is: <input id="chargify-token" type="text" /></br>
+        Use this token in your backend to perform an action with the Chargify API
+
+      </form>
+    </div>
+    <!-- end body -->
+
+    <!-- JavaScript (jquery/bootstrap) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- Javascript (Chargifyjs load and submit files) -->
+    <script src="load.js"></script>   <!-- This contains your Chargify.js file -->
+    <script src="submit.js"></script>  <!-- This pauses form submission to create a token -->
+
+    <!-- Smooth form load -->
+    <script>
+    setTimeout(function () {
+        $("#load_spinner").remove();
+        $("#chargify-form").show();
+    }, 2000);
+    </script>
+
+  </body>
+</html>
