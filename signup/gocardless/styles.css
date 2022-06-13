@@ -1,0 +1,22 @@
+/* styles.css */
+.col-md-6 {
+  margin-top: 0px;
+}
+
+/* bank */
+#gocardless_first_name iframe,
+#gocardless_last_name iframe,
+#gocardless_bank_name iframe, 
+#gocardless_bank_iban iframe,
+#gocardless_branch_code iframe,
+#gocardless_routing_number iframe,
+#gocardless_account_number iframe,
+#gocardless_account_holder_type iframe,
+#gocardless_billing_address iframe,
+#gocardless_billing_address2 iframe,
+#gocardless_billing_city iframe,
+#gocardless_billing_zip iframe,
+#gocardless_billing_country iframe, 
+#gocardless_billing_state iframe {
+  width: 100% !important;
+}

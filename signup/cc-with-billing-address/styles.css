@@ -1,0 +1,26 @@
+/* styles.css */
+.col-md-6 {
+  margin-top: 0px;
+}
+
+/* credit card */
+#cc_first_name iframe,
+#cc_last_name iframe,
+#cc_number iframe,
+#cc_billing_address iframe,
+#cc_billing_address2 iframe,
+#cc_billing_city iframe,
+#cc_billing_zip iframe,
+#cc_billing_country iframe,
+#cc_billing_state iframe {
+  width: 100%;
+}
+#cc_year iframe {
+  width: 30%;
+}
+#cc_cvv iframe {
+  width: 30%;
+}
+#cc_month iframe {
+  width: 30%;
+} 

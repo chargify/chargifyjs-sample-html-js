@@ -1,0 +1,21 @@
+/* styles.css */
+.col-md-6 {
+  margin-top: 0px;
+}
+
+/* bank */
+#bank_first_name iframe,
+#bank_last_name iframe,
+#bank_name iframe, 
+#bank_routing_number iframe, 
+#bank_account_number iframe, 
+#bank_account_type iframe, 
+#bank_account_holder_type iframe, 
+#bank_billing_address iframe,
+#bank_billing_address2 iframe,
+#bank_billing_city iframe,
+#bank_billing_zip iframe,
+#bank_billing_country iframe, 
+#bank_billing_state iframe {
+  width: 100% !important;
+}

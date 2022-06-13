@@ -1,0 +1,12 @@
+/* styles.css */
+.col-md-6 {
+  margin-top: 0px;
+}
+
+/* paypal */
+#paypal_first_name iframe, 
+#paypal_last_name iframe,
+#pay-pal iframe {
+  width: 100% !important;
+  height: 100px !important;
+} 
